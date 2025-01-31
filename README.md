@@ -20,3 +20,39 @@
 1. Установите [Homebrew](https://brew.sh) (если не установлен) с помощью следующей команды в терминале:
    ```bash
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+2. Установите FFmpeg:
+    ```bash
+    brew install ffmpeg
+3. Установите ImageMagick:
+    ```bash
+    brew install imagemagick
+
+### Установка проекта
+
+1. Клонируйте репозиторий:
+    ```bash
+    git clone https://github.com/username/video-converter-mac.git
+2. Перейдите в директорию проекта:
+    ```bash
+    cd video-converter-mac
+3. Сделайте скрипт исполнимым:
+    ```bash
+    chmod +x converter/video_converter.sh
+
+### Как использовать
+1. Поместите файл записи экрана (формат .mov), созданный системой macOS, в папку /Users/vladislav/Desktop/Скриншоты/.
+2. Запустите скрипт:
+    ```bash
+    ./converter/video_converter.sh
+
+Скрипт автоматически обработает все файлы .mov в указанной папке, создав для каждого два новых файла:
+Видео в формате .mp4, сохраненное в той же папке с префиксом video_.
+GIF-анимированную версию видео, сохраненную в папке GIF/.
+
+
+
+
+
+
+
+
